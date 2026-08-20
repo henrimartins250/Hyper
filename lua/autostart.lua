@@ -1,0 +1,6 @@
+hl.on("hyprland.start", function()
+    hl.exec_cmd("vicinae server")
+    hl.exec_cmd("awww-daemon")
+    hl.exec_cmd("awww img ~/media/images/hyprbg/blackcube.png")
+    hl.exec_cmd("quickshell -p ~/.config/quickshell/")
+end)

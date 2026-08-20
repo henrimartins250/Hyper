@@ -1,0 +1,1 @@
+-- No window or layer rules defined in the original config
