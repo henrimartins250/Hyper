@@ -17,26 +17,6 @@
       slurp
     ];
 
-    # Define a systemd user service properly
-    systemd.user.services.hyprland = {
-      Unit = {
-        Description = "Hyprland Wayland Compositor";
-        Documentation = ["man:hyprland(1)"];
-        PartOf = ["graphical-session.target"];
-      };
-      Service = {
-        Type = "exec";
-        ExecStart = "${pkgs.hyprland}/bin/hyprland";
-        Restart = "on-failure";
-        RestartSec = "5s";
-        TimeoutStopSec = "5s";
-        Slice = "session.slice";
-      };
-      Install = {
-        WantedBy = ["graphical-session.target"];
-      };
-    };
-
     home.file.".config/hypr/".source = ./.;
   };
 }
