@@ -1,5 +1,5 @@
 {
-  description = "hvim: henry's neovim configuration";
+  description = "hyper: henry's hyperland configuration";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
