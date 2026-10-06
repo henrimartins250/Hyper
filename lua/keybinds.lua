@@ -17,10 +17,12 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("toggle"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 
+-- scripts
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("~/.config/hypr/scripts/clipper.sh"))
+
 -- Window Management
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + H", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + f", hl.dsp.window.fullscreen({}))
 
