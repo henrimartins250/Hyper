@@ -18,7 +18,7 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 
 -- scripts
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("~/.config/hypr/scripts/clipper.sh"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hypr-ocr"))
 
 -- Window Management
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
