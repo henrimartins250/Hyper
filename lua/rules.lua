@@ -4,3 +4,10 @@ hl.window_rule({
 	fullscreen_state = "2",
 	workspace = "3 silent",
 })
+
+hl.window_rule({
+	match = { title = "nvim-float-term" },
+	float = true,
+	center = true,
+	size = { "monitor_w / 2", "monitor_h / 2" },
+})
